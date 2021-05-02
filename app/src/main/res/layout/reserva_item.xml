@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="16:00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="77dp"
+            android:text="31-12-2021"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Nombre"
+            android:layout_toStartOf="@id/textViewFecha"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/textViewTelefono"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="662250557"
+            android:layout_toStartOf="@id/textViewFecha"
+            android:layout_below="@id/textViewNombre"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
